@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบชำระเงิน-เพิ่ม-ถอน</title>
+    <style>
+        body{
+            background: white;
+        }
+        h1{
+            color: #8f0000;
+        }
+        #box1{
+            border: 1px solid;
+             height: 55px;
+             width: 600px;
+             background-color: #bab7b7;
+             position:sticky;
+             top: 0px;
+        }
+        h4{
+            color: #8f0000;
+        }
+        #container div {
+            margin: 0;
+            padding: 0;
+        }
+    
+        #container2 {
+            display: flex;
+        }
+        .gernerte .print{
+            all: ubset;
+            height: 50px;
+            width: 250px;
+            background: #8F0000;
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            transform: all .2s;
+
+        }
+        .gernerte .out{
+            all: ubset;
+            height: 50px;
+            width: 200px;
+            background: #8f0000;
+            position: absolute;
+            bottom: 0;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            transform: all .2s;
+        }
+        #Last{
+            background: #bab7b7;
+        }
+        
+    </style>
+</head>
+<body>
+    <script src="contron.js"></script>
+    <h1>ระบบชำระเงิน เพิ่ม-ถอน</h1>
+    <div id="container" style="height: 50px; width: auto; background-color: #F5CC54; margin-top: -10px; ">
+        <br>
+        <div id="container2" style="margin:0 ;">
+            <div style="text-align: left; margin-left: 10px; font-weight: bold; font-size: 20px;">
+                 ข้อมูลส่วนตัวของนักศึกษา                                                                         
+            </div>
+            <div style="text-align: left; margin-left: auto; margin-right: 10px; font-weight: bold; font-size: 20px;">
+                 FIRSTNAME LASTNAME
+            </div>
+            <div style="margin-right: 10px;">
+                <img  src="Photo24.png" style="height: 25px;">
+            </div>    
+        </div>
+    </div>
+    <br>
+    <div id="infomation">
+      <div>
+        <label>ชื่อ สกุล:</label>
+            <label id="NameandLastname">FIRSTNAME LASTNAME</label>
+      </div>   
+      <div>    
+        <label>เลขบัตรประชาชน : </label>
+            <label id="ID">1000000000001</label> 
+      </div>
+      <div>
+        <label>รหัสนักศึกษา : </label>
+           <label id="IDStudent">6309683040</label>
+      </div> 
+      <div>
+        <label id="live">คณะวิทยาศาสตร์ สาขาสถิติ ภาคปกติ</label>
+      </div>  
+      <div>
+        <label>สถานะการชำระเงิน : </label>
+           <label id="Check">รอการชำระเงิน</label>
+      </div>
+      <div>
+        <label>วันสุดท้ายของการชำระเงิน :</label>
+           <label id="Day">24 พฤศจิกายน 2565</label>
+      </div> 
+    </div>
+    <br>
+    <br>
+    <div id="container" style="height: 50px; width: auto; background-color: #F5CC54; margin-top: -10px; ">
+        <br>
+        <div id="container2" style="margin:0 ;">
+            <div style="text-align: left; margin-left: 10px; font-weight: bold; font-size: 20px;">
+                 รายการวิชาต้องชำระเงิน                                                                        
+            </div>   
+        </div>
+    </div>
+    <div>
+        <br>
+        <table bgcolor="black" width="700">
+            <tr bgcolor="grey">
+                <th width="50">ลำดับ</th>
+                <th width="100">รหัสวิชา</th>
+                <th width="100">ชื่อวิชา</th>
+                <th width="100">Section</th>
+                <th width="100">วัน/เวลา</th>
+                <th width="100">หน่วยกิต</th>
+                <th width="100">ชื่อผู้สอน</th>
+                <th width="50">เพิ่ม</th>
+                <th width="50">ถอน</th>
+                <th width="50">จำนวนเงิน</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>1</td>
+                <td><label id="S1_1" name="รหัสวิชา1">ST322</label></td>
+                <td><label id="S1_2" name="ชื่อวิชา1">MATHEMSTICAL STATISTICS 1</label></td>
+                <td><label id="S1_3" name="Section1">090001</label></td>
+                <td><label id="S1_4" name="วันเวลา1">WE 13:30-15:00, FR 13:30-15:00</label></td>
+                <td><label id="S1_5" name="หน่วยกิต1">3</label></td>
+                <td><label id="S1_6" name="ชื่อผู้สอน1">รศ.ดร.กลม บุษบา</label></td>
+                <td><label id="S1_7" name="เพิ่ม1">เพิ่ม</label></td>
+                <td><label id="S1_8" name="ถอน1">-</label></td>
+                <td><label id="S1_9" name="จำนวนเงิน1">150</label></td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>2</td>
+                <td><label id="S2_1" name="รหัสวิชา2">CS103</label></td>
+                <td><label id="S2_2" name="ชื่อวิชา2">INTRODUCTION TO COMPUTER PROGRAMMING</label></td>
+                <td><label id="S2_3" name="Section2">070003</label></td>
+                <td><label id="S2_4" name="วันเวลา2">WE 09:30-11:00, FR 09:30-11:00</label></td>
+                <td><label id="S2_5" name="หน่วยกิต2">3</label></td>
+                <td><label id="S2_6" name="ชื่อผู้สอน2">ผศ.ดร.ธนาธร ทะนานทอง</label></td>
+                <td><label id="S2_7" name="เพิ่ม2">-</label></td>
+                <td><label id="S2_8" name="ถอน2">ถอน</label></td>
+                <td><label id="S2_9" name="จำนวนเงิน2">150</label></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div class="gernerte">
+        <button class="print">พิมพ์ใบชำระเงินการลงทะเบียน</button>
+        <button class="out">ออกจากระบบ</button>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="Last"> 
+        <label>หมายเหตุ: นักศึกษาที่ทำการชำระเงินเเล้วระบบจะเเจ้งเตือน TU REG ว่าทำการชำระเงิน</label>
+    </div>
+</body>
+</html>
